@@ -121,6 +121,18 @@ create file  with the name lxc_php5.6.dev wiith command nano lxc_php5.6 and save
     
 
 
+ANALYSYS
+1. Why prefer using debian 9 then ubuntu 16.04
+    First debian 9 basically for beginners and stable for use, more than that debian 9 available for free. More than that ubuntu 16.04 and debian 9 is not different that much.
+
+2. Why use LXC virtualization on the website schema that will be developed?
+    Cause LXC was used for virtualization based OS allow creation and running multiple in  isolated Linux virtual environments (VE) with single host or user.
+    
+3.  what is a proxy server? why can we think of vm.local as a proxy server?
+    proxy is a system that allows us to be able to access the internet network using a different IP from the one received by the device. This system uses a proxy server to work. While the proxy server itself is a device or computer that is used to provide proxy services. VM.local can be a server cause with configuration on host admin we can use it anyway in some of operating system, that can be our bridge to the browser.
+
+
+
 
 Sekian dari kami, mohon maaf kami kurang melakukan secara optimal karena terdapat beberapa kendala. 
 
