@@ -17,7 +17,7 @@
 
 
 
-
+assets/1.Rename to ubuntu_landing.PNG
 
 
 ​																							JURUSAN TEKNOLOGI INFORMASI
