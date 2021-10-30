@@ -87,8 +87,7 @@ Dari skema diatas maka mereka akan melakukan pekerjaan sebagai berikut :
 
    
 
-![1.Rename to ubuntu_landing](D:/Universitas%20Telkom/Semester%205/Sysadmin/Prak%201/1.Rename%20to%20ubuntu_landing.PNG)
-
+![1.Rename to ubuntu_landing] (https://github.com/menmon/Modul-Praktikum-Virtual-Kelompok-13/blob/main/assets/1.Rename%20to%20ubuntu_landing.PNG)
 
 
 2.  Install lxc debian 9 with name debian_php5.6 with this code
@@ -100,6 +99,8 @@ Dari skema diatas maka mereka akan melakukan pekerjaan sebagai berikut :
 3. Set up Nginx 
 
 go to the site wit command cd /etc/nginx/sites-available.
+
+4
 
 create file  with the name lxc_php5.6.dev wiith command nano lxc_php5.6 and save it
 
