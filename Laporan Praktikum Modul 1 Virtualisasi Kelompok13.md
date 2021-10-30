@@ -87,7 +87,9 @@ Dari skema diatas maka mereka akan melakukan pekerjaan sebagai berikut :
 
    
 
-![1.Rename to ubuntu_landing] (https://github.com/menmon/Modul-Praktikum-Virtual-Kelompok-13/blob/main/assets/1.Rename%20to%20ubuntu_landing.PNG)
+![1.Rename to ubuntu_landing] (github.com/menmon/Modul-Praktikum-Virtual-Kelompok-13/blob/main/assets/1.Rename%20to%20ubuntu_landing.PNG)
+
+after that using command 'sudo lxc-start -n ubuntu_landing' and 'sudo lxc-attach -n ubuntu_landing, then set IP ubuntu landing from 10.0.3.102 to 10.0.3.103 with command 'nano /etc/network/interfaces' and save. Restart network with command 'sudo lxc-start -n ubuntu_landing' then stop with command 'sudo lxc-stop -n ubuntu_landing'. Last start the container again.
 
 
 2.  Install lxc debian 9 with name debian_php5.6 with this code
@@ -95,6 +97,10 @@ Dari skema diatas maka mereka akan melakukan pekerjaan sebagai berikut :
    sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release sretch --arch amd64 --force-cache --no-validate --server images.linux containers.org
 
 ![2.Install lxc debian 9 dengan nama debian_php5.6](D:/Universitas%20Telkom/Semester%205/Sysadmin/Prak%201/2.Install%20lxc%20debian%209%20dengan%20nama%20debian_php5.6.PNG)
+
+then install curl with command 'apt install nano net-tools curl'. When done setting  dhcp static on debian_php5.6 using ip 10.0.3.102.
+
+Then restart with command 'systemctl restart networking.service'
 
 3. Set up Nginx 
 
@@ -105,6 +111,14 @@ go to the site wit command cd /etc/nginx/sites-available.
 create file  with the name lxc_php5.6.dev wiith command nano lxc_php5.6 and save it
 
 ![3.Setup Nginx](D:/Universitas%20Telkom/Semester%205/Sysadmin/Prak%201/3.Setup%20Nginx.PNG)
+
+
+5. Follow this step command 'sudo su' for entering root, then 'cd /var/lib/lxc/ubuntu_landing' for go to ubuntu landing dir, open the file and edit with 'nano config'. Add script lxc.start.auto = 1 for automatically on.
+
+6. install nginx on VM with 'sudo apt install nginx nginx-extras', then go to 'cd /etc/nginx/sites-available'. Make and edit with 'sudo nano vm.local' then 'ln -s /etc/nginx/sites-available/vm.local' but we got an error in this
+
+
+    
 
 
 
