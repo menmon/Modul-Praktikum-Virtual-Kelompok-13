@@ -92,12 +92,13 @@ Our step is create new folder and move the folder at the same time to change the
 > ```
 >
 > 
+![1 Rename to ubuntu_landing](https://user-images.githubusercontent.com/51281505/139530829-df0b3170-93a6-435a-b3fb-dc4ae1abac6d.PNG)
 
    
 
 
 
-1. ##### Install lxc debian 9 dengan nama debian_php5.6
+2. ##### Install lxc debian 9 dengan nama debian_php5.6
 
 
 
@@ -113,7 +114,9 @@ after that using command
 sudo lxc-attach -n ubuntu_landing
 ```
 
- 
+ sudo apt install nginx nginx-extras
+apt install nano net-tools curl
+
 
 then set IP ubuntu landing from 10.0.3.102 to 10.0.3.103 with command 
 
@@ -142,11 +145,12 @@ sudo lxc-ls -f
 and see the IP has changed.
 
 
-2.  Install lxc debian 9 with name debian_php5.6 with this code
+  Install lxc debian 9 with name debian_php5.6 with this code
 
    ```
    sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release sretch --arch amd64 --force-cache --no-validate --server images.linux containers.org
    ```
+![2 Install lxc debian 9 dengan nama debian_php5 6](https://user-images.githubusercontent.com/51281505/139530919-01bccea3-fdb2-4f57-8f5a-bd3b84296aa5.PNG)
 
 
 
@@ -212,6 +216,7 @@ cd /etc/nginx/sites-available
 sudo nano lxc_php5.6.dev
 ```
 
+![3 Setup Nginx](https://user-images.githubusercontent.com/51281505/139530933-530e39ca-1485-45a6-a719-fa027de3f62a.PNG)
 
 
 rename the server with lxc_php5.dev and save
@@ -253,6 +258,7 @@ Go to the hosts directory using command
 ```
 nano /etc/hosts`
 ```
+![etc host ubuntu landing](https://user-images.githubusercontent.com/51281505/139530999-ee9acd61-7c7d-4b91-92b3-4489725bb6f6.PNG)
 
 Add the localhost ip 127.0.0.1 of lxc_php5.6 with the file name lxc_php5.dev.
 
@@ -320,6 +326,7 @@ first step
 sudo apt install nginx nginx-extras 
 ```
 
+![ubuntu land install](https://user-images.githubusercontent.com/51281505/139530958-1db9c782-d902-4331-be71-87d785932605.PNG)
 
 
 Go to
@@ -457,6 +464,10 @@ curl -i http://lxc_landing.dev
     proxy is a system that allows us to be able to access the internet network using a different IP from the one received by the device. This system uses a proxy server to work. While the proxy server itself is a device or computer that is used to provide proxy services. VM.local can be a server cause with configuration on host admin we can use it anyway in some of operating system, that can be our bridge to the browser.
 
 
+![landing html responsi](https://user-images.githubusercontent.com/51281505/139531031-55b8356b-fdc4-4233-8428-894618075370.PNG)
+![hosting](https://user-images.githubusercontent.com/51281505/139531036-f4f96453-8e9f-4d01-9a80-f5953159ebf9.PNG)
+
+![etc host ubuntu landing](https://user-images.githubusercontent.com/51281505/139531041-c13f017c-f30b-4be1-9f04-2b42dbe2ddf2.PNG)
 
 
 Sekian dari kami, mohon maaf kami kurang melakukan secara optimal karena terdapat beberapa kendala. 
